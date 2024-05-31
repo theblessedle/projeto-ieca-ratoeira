@@ -1,0 +1,15 @@
+
+
+Servo servomotor; 
+int pos = 0; 
+
+void setup () {
+  servomotor.attach(9); /
+}
+
+void loop () {
+   for(pos = 0; pos <= 500; pos += 1) {  
+    servomotor.write(pos);  
+    delay(15); 
+  }
+}
